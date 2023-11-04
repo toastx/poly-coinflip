@@ -63,19 +63,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "betWinnings",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint8",
@@ -86,6 +73,46 @@
 				"name": "flip",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBetHistory",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "user",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betAmount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "outcome",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betWinnings",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Coinflip.Bet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -103,51 +130,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "randMod",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "randomNum",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "result",
 				"outputs": [
 					{
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "user",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -189,11 +177,11 @@
 	},
 	"sources": {
 		"contracts/coinflip.sol": {
-			"keccak256": "0xa7d7c5754a6d6e0773cafb1cbed060fb4003aa192cd570d426d29df75f65f43c",
+			"keccak256": "0x43f343b7f4fa9116ba773e0d805e95ac5c99df7c7ad5a4615ad6b5f64731c15c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b64070bf957a3c02984e4c22122623d3b6fb899f7fd05bcd81f8985074b03d68",
-				"dweb:/ipfs/QmX6qWPcvHBWhmuPgzKnRyhVRSpkQRNznauVNapkwpotHy"
+				"bzz-raw://def9c0858b6fc0ea122521d9c873353668f3ac85aa2309ea4edc9920c294612a",
+				"dweb:/ipfs/QmdGfPVcYZ9CzPosmWKc5dm23NN9z9KHgcxs34AUUrXPQb"
 			]
 		}
 	},
